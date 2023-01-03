@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imagem.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Alertas</title>
+</head>
+<body>
+    <div class="container">
+        
+    
+        <div class="alert alert-success" role="alert">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum placeat nesciunt voluptas optio cumque culpa consequatur, error illo minus voluptatem asperiores molestiae ipsam quae aut ducimus sint, quos porro?
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="alert alert-secondary"> Hello Word!</div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="alert alert-primary">Hello Word!</div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm">
+
+                <div class="alert alert-danger">Error!</div>
+
+            </div>
+
+            <div class="col-sm">
+                <div class="alert alert-warning">Error!</div>
+
+            </div>
+
+        </div>
+
+        <div class="alert alert-info">
+ 
+            Information!
+            <a href="Http://youtube.com./hcodebrasil" target="_blank">Youtube codiguin</a>
+
+        </div>
+        
+        <div class="alert alert-dark">
+
+            <h4>Titulo dark</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos eos beatae eum tempora deleniti non ab assumenda harum illo nam commodi dignissimos nemo, porro eligendi architecto nesciunt cum mollitia ipsa.</p>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maxime sit quisquam, asperiores, id adipisci sed perspiciatis quasi ut neque blanditiis quae expedita ipsum molestiae aspernatur distinctio, magni a architecto?</p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti est, eius dolor natus reprehenderit fugit quibusdam aperiam assumenda aliquam enim! Ut facilis quaerat at, voluptatem iusto repudiandae hic nobis officiis?
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+
+        <button id="btn-close-all" type="button"> Fechar todos os alertas</button>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script>
+        $(() => {
+
+            $('#btn-close-all').on('click', e => {
+
+                $('.alert').alert('close');
+
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
